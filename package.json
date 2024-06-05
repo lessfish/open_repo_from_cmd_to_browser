@@ -1,0 +1,13 @@
+{
+  "name": "open_repo_from_cmd_to_browser",
+  "description": "从命令行打开浏览器中的项目",
+  "version": "1.0.0",
+  "bin": {
+    "go": "./cli.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "open": "8.4.2",
+    "shelljs": "^0.8.5"
+  }
+}
