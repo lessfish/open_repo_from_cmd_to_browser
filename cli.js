@@ -28,6 +28,18 @@ shelljs.exec(
 
     const p = /git@(.*):(.*)\/(.*)\.git/;
     const res = p.exec(str);
+    // e.g.
+    // https://github.com/lessfish/jsj
+    // res[1] = 'github.com'
+    // res[2] = 'lessfish'
+    // res[3] = 'jsj'
+    // ----------
+    // e.g.
+    // https://code.byted.org/cloud-fe/onesite
+    // res[1] = 'code.byted.org'
+    // res[2] = 'cloud-fe'
+    // res[3] = 'onesite'
+    // ----------
     const url = `https://${res[1]}/${res[2]}/${res[3]}`;
 
     if (!goToBranch) {
